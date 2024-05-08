@@ -13,6 +13,7 @@
 }
 body{
     background-color: #89937C;
+    font-family: dafont;
 }
 .titulo__contenedor{
     display: flex;
@@ -43,7 +44,6 @@ body{
     color: #282B28;
     display: flex;
     align-items: center;
-    font-family: dafont;
 }
 .navegador li a{
     border-radius: 10px;
@@ -66,6 +66,21 @@ body{
 }
 .main__carrusel{
     margin-bottom: 50px;
+    height: 36rem;
+}
+.main__texto{
+    text-align: center;
+}
+.main__card{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    background-color: #363946;
+    color: #000000;
+}
+.card a{
+    text-decoration: none;
 }
 @media screen and (max-width:1000px){
 
@@ -120,6 +135,9 @@ body{
     .navegador__links li a:active{
         background-color: #adadad;
         border-radius: 10px;
+    }
+    .main__carrusel{
+        height: 100%;
     }
 }
 @media screen and (max-width:534px){
