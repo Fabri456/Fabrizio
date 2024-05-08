@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Fabrizio.css">
     <link rel="shortcut icon" href="./multimedia/descarga.png" type="image/x-icon">
-    <title>Fabrizio Franceschi</title>
+    <title>StellarStyleHub</title>
 </head>
 <body>
     <header class="titulo__contenedor">
-        <img class="titulo__imagen" src="multimedia/pngtree-car-logo-design-template-vector-picture-image_3605888.png" alt="auto logo">
-        <h1 class="titulo__texto">proyecto web</h1>  
+        <img class="titulo__imagen" src="./multimedia/descarga.png" alt="logo">
+        <h1 class="titulo__texto">StellarStyleHub</h1>  
         <!--navegador para pantallas con minimo de 1000px--> 
         <nav class="navbar navbar-expand-lg bg-body-tertiary navegador">
             <div class="container-fluid">
@@ -21,16 +21,16 @@
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" href="#">Ofertas</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Features</a>
+                    <a class="nav-link active" href="#">Productos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Pricing</a>
+                    <a class="nav-link active" href="#">Lo nuevo</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Pricing</a>
+                    <a class="nav-link active" href="#">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -53,6 +53,34 @@
             </div>
           </div>      
     </header>
+    <main>
+      <div id="carouselExampleAutoplaying" class="carousel slide main__carrusel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner main__carruselimg">
+          <div class="carousel-item active">
+            <img src="./multimedia/banner_1.webp" class="d-block w-100" alt="foto1">
+          </div>
+          <div class="carousel-item">
+            <img src="./multimedia/Banner_2.webp" class="d-block w-100" alt="foto2">
+          </div>
+          <div class="carousel-item">
+            <img src="./multimedia/banner_3.webp" class="d-block w-100" alt="foto3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>        
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -12,25 +12,24 @@
     src: url(./font/Milker.otf) format('truetype');
 }
 body{
-    background-color: #34363C;
+    background-color: #89937C;
 }
 .titulo__contenedor{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #E76145;
+    background-color: #89937C;
     border: 10px;
     border-color: white;
-    position: sticky;
-    top: 0%;
 }
 .titulo__imagen{
-    width: 200px;
+    width: 150px;
     border-radius: 30px;
     opacity: .6;
     padding: 10px;
 }
 .titulo__texto{
+    color: #282B28;
     padding: 10px;
     font-size: 60px;
     font-family: MiFuentePersonalizada;
@@ -41,29 +40,32 @@ body{
     height: 100px;
 }
 .navegador li{
-    color: #000000;
+    color: #282B28;
     display: flex;
     align-items: center;
     font-family: dafont;
 }
 .navegador li a{
     border-radius: 10px;
-    background-color: #E76145;
+    background-color: #89937C;
     font-size: 17px;
     padding: 20px;
     margin: 10px; 
     text-decoration: none;  
 }
 .navegador li a:hover{
-    background-color: #8b3a29;
+    background-color: #5c6451;
     border-radius: 10px;
 }
 .navegador li a:active{
-    background-color: #331711;
+    background-color: #373b32;
     border-radius: 10px;
 }
 .navegador__dropdown{
     display: none;
+}
+.main__carrusel{
+    margin-bottom: 50px;
 }
 @media screen and (max-width:1000px){
 
@@ -84,15 +86,15 @@ body{
     .navegador__dropdown{
         display: unset;
         margin-right: 20px;
-        background-color:#E76145;
-        border-color: #000000;
+        background-color:#89937C;
+        border-color: #282B28;
     }
     .navegador__imagen{
         width: 40px;
         background-size: cover;
     }
     .navegador__contenedor{
-        background-color: #E76145;
+        background-color: #89937C;
     }
     .navegador__links{
         padding: 0%;
@@ -106,7 +108,7 @@ body{
     }
     .navegador__links li a{
         text-align: center;
-        color: #000000;
+        color: #282B28;
         width: 100%;
         border-radius: 10px;
         background-color: #ffffff;
