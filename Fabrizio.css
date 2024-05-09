@@ -19,7 +19,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #89937C;
+    background-color: #626958;
     border: 10px;
     border-color: white;
 }
@@ -74,6 +74,7 @@ body{
 .main__card{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 50px;
 }
 .card{
     background-color: #363946;
@@ -81,6 +82,53 @@ body{
 }
 .card a{
     text-decoration: none;
+}
+.main__grilla{
+    display: grid;
+    border-radius: 10px;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap: 10px;
+    grid-template-areas: 
+    "CategoriaJeans CategoriaCamperas"
+    "CategoriaSweaters CategoriasBuzos";
+}
+.main__grilla a:hover{
+    opacity: .6;
+}
+.CategoriaJeans{
+    width: 41rem;
+    border-radius: 10px;
+    grid-area: CategoriaJeans;
+
+} 
+.CategoriaCamperas{
+    width: 41rem;
+    border-radius: 10px;
+    grid-area: CategoriaCamperas;
+
+}
+.CategoriaSweaters{
+    width: 41rem;
+    border-radius: 10px;
+    grid-area: CategoriaSweaters;
+
+}
+.CategoriaBuzos{
+    width: 41rem;
+    border-radius: 10px;
+    grid-area: CategoriaBuzos;
+
+}
+.footer__contenedor{
+    background-color: #626958;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer__enlaces{
+    width: 50px;
+    margin: 20px;
 }
 @media screen and (max-width:1000px){
 
