@@ -12,7 +12,7 @@
     src: url(./font/Milker.otf) format('truetype');
 }
 body{
-    background-color: #89937C;
+    background-image: url(./multimedia/desktop-wallpaper-dark-gray-dark-grey.jpg);
     font-family: dafont;
 }
 .titulo__contenedor{
@@ -26,7 +26,6 @@ body{
 .titulo__imagen{
     width: 150px;
     border-radius: 30px;
-    opacity: .6;
     padding: 10px;
 }
 .titulo__texto{
@@ -70,6 +69,12 @@ body{
 }
 .main__texto{
     text-align: center;
+    color: #ffffff;
+    padding: 5px;
+    margin: 0%;
+}
+.main__texto__contenedor{
+    border: 1px solid #ffffff;
 }
 .main__card{
     display: flex;

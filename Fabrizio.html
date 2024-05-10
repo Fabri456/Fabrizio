@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Fabrizio.css">
-    <link rel="shortcut icon" href="./multimedia/descarga.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./multimedia/decoracion.png" type="image/x-icon">
     <title>StellarStyleHub</title>
 </head>
 <body>
   <!--comienzo del header-->
     <header class="titulo__contenedor">
-        <img class="titulo__imagen" src="./multimedia/descarga.png" alt="logo">
+        <img class="titulo__imagen" src="./multimedia/decoracion.png" alt="logo">
         <h1 class="titulo__texto">StellarStyleHub</h1>  
         <!--navegador para pantallas con minimo de 1000px--> 
         <nav class="navbar navbar-expand-lg bg-body-tertiary navegador">
@@ -28,10 +28,10 @@
                     <a class="nav-link active" href="#">Productos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Lo nuevo</a>
+                    <a class="nav-link active" href="#">Conócenos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Contacto</a>
+                    <a class="nav-link active" href="./pages/Contacto.html">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -83,7 +83,10 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div> 
-      <h2 class="main__texto">Ofertas</h2>
+      <!--comienzo de etiquetas bootstrap "ofertas" y "lo nuevo"-->
+      <div class="main__texto__contenedor">
+        <h2 class="main__texto">Ofertas</h2>
+        </div>
       <div class="main__card">
         <div class="card" style="width: 18rem;">
           <img src="./multimedia/devre-saco_02d000131-001_101_1.webp" class="card-img-top" alt="Saco">
@@ -126,7 +129,9 @@
           </div>
         </div>
       </div>
+      <div class="main__texto__contenedor">
       <h2 class="main__texto">Lo nuevo</h2>
+      </div>
       <div class="main__card">
         <div class="card" style="width: 18rem;">
           <img src="./multimedia/devre-saco_02d000131-001_101_1.webp" class="card-img-top" alt="Saco">
@@ -169,6 +174,7 @@
           </div>
         </div>
       </div>
+      <!--grilla con diferentes categorias-->
       <div class="main__grilla">
         <a href=""><img src="./multimedia/2-slide-1714655065628-1023392982-172875dff93dc3183a7e35a72016e8921714655069-1024-1024.webp" alt="categoria jeans" class="CategoriaJeans"></a>
         <a href=""><img src="./multimedia/2-slide-1714655065628-7159604382-8d8efcf0310d809074b7b59f7f2250b51714655067-1024-1024.webp" alt="categoria camperas" class="CategoriaCamperas"></a>
@@ -176,6 +182,7 @@
         <a href=""><img src="./multimedia/2-slide-1712929916499-7038527650-9558f3968b84566963c988394a13bb771712929922-1024-1024.webp" alt="categoria buzos" class="CategoriaBuzos"></a>
       </div>
     </main>
+    <!--comienzo del footer con diversos links-->
     <footer class="footer__contenedor">
       <a href=""><img src="./multimedia/facebook.png" alt="facebook" class="footer__enlaces"></a>
       <a href=""><img src="./multimedia/instagram.png" alt="instagram" class="footer__enlaces"></a>
