@@ -257,7 +257,7 @@ body{
 @media screen and (max-width:534px){
     .titulo__texto{
         padding: 10px;
-        font-size: 40px;
+        font-size: 35px;
         font-family: MiFuentePersonalizada;
     }
     .titulo__imagen{
