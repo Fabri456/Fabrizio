@@ -21,7 +21,7 @@ body{
     align-items: center;
     background-color: #626958;
     border: 10px;
-    border-color: white;
+    border-color: #ffffff;
 }
 .titulo__imagen{
     width: 150px;
@@ -29,14 +29,14 @@ body{
     padding: 10px;
 }
 .titulo__texto{
-    color: #282B28;
+    color: #000000;
     padding: 10px;
     font-size: 60px;
     font-family: MiFuentePersonalizada;
 }
 .navegador{
     border-radius: 10px;
-    margin-right: 30px;
+    margin: 20px;
     height: 100px;
 }
 .navegador li{
@@ -65,27 +65,29 @@ body{
 }
 .main__carrusel{
     margin-bottom: 50px;
-    height: 36rem;
 }
 .main__texto{
-    text-align: center;
     color: #ffffff;
-    padding: 5px;
-    margin: 0%;
+    border: 2px solid #ffffff;
+    text-align: center;
+    margin: 0px 300px 0px 300px
 }
-.main__texto__contenedor{
-    border: 1px solid #ffffff;
-}
-.main__card{
+.main__contenedor__ofertas__newin{
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px;
+    justify-content: space-between;
+    margin: 45px 0px 50px 0px;
 }
-.card{
-    background-color: #363946;
-    color: #000000;
+.main__contenedor__card{
+    background-color: #89937C;
+    border-radius: 10px;
+    width: 15rem;
+    margin: 10px;
 }
-.card a{
+.main__imagen{
+    width: 15rem;
+}
+.main__texto__card{
+    text-align: center;
     text-decoration: none;
 }
 .main__grilla{
@@ -134,6 +136,42 @@ body{
 .footer__enlaces{
     width: 50px;
     margin: 20px;
+}
+.main__carrusel__mediaqueries{
+    display: none;
+}
+.formulario__contenedor{
+    border: 2px solid #89937C;
+    margin: 150px;
+    padding: 50px;
+    border-radius: 40px;
+    background-color: #89937c7a;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "formulario__forms formulario__imagen"
+    "formulario__forms formulario__imagen"
+    "formulario__forms formulario__imagen"
+    "formulario__enviar formulario__imagen";
+}
+.formulario__imagen__logo{
+    width: 50px;
+}
+.formulario__imagen{
+    width: 400px;
+    grid-area: formulario__imagen;
+    margin-left: 25px;
+}
+.formulario__forms{
+    grid-area: formulario__forms;
+}
+.formulario__enviar{
+    text-align: center;
+    grid-area: formulario__enviar;
+}
+.formulario__texto{
+    color:#ffffff;
 }
 @media screen and (max-width:1000px){
 
@@ -189,8 +227,8 @@ body{
         background-color: #adadad;
         border-radius: 10px;
     }
-    .main__carrusel{
-        height: 100%;
+    .main__texto__contenedor{
+        margin: 20px;
     }
 }
 @media screen and (max-width:534px){
@@ -204,6 +242,15 @@ body{
     }
     .navegador{
         display: none;
+    }
+    .main__carrusel{
+        display: none;
+    }
+    .main__carrusel__mediaqueries{
+        display: unset;
+    }
+    .main__card{
+        display: block;
     }
 
 }

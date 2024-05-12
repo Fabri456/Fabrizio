@@ -8,23 +8,79 @@
     <title>Document</title>
 </head>
 <body>
+    <!--comienzo del header-->
+    <header class="titulo__contenedor">
+      <h1 class="titulo__texto">StellarStyleHub</h1>  
+      <!--navegador para pantallas con minimo de 1000px--> 
+      <nav class="navbar navbar-expand-lg bg-body-tertiary navegador">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Conócenos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="">Ofertas</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!--navegador para pantallas como maximo 1000px-->
+        <button class="btn btn-primary navegador__dropdown" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img class="navegador__imagen" src="./multimedia/png-clipart-menu-icon-icons-logos-emojis-menu-icons-thumbnail.png" alt="navegador menu"></button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body navegador__contenedor">
+            <ul class="navegador__links">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="">Productos</a></li>
+              <li><a href="">Lo nuevo</a></li>
+              <li><a href="">Ofertas</a></li>
+            </ul>
+          </div>
+        </div>      
+  </header>
   <main>
-    <form>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
-      </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    <div class="formulario__contenedor">
+     <div class="formulario__forms">
+       <div class="mb-3">
+        <label for="disabledTextInput" class="form-label formulario__texto">Nombre</label>
+        <input type="text" id="disabledTextInput" class="form-control">
+       </div>
+       <div class="mb-3">
+        <label for="disabledTextInput" class="form-label formulario__texto">Numero</label>
+        <input type="text" id="disabledTextInput" class="form-control" placeholder="Ej.44443333">
+       </div>
+       <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label formulario__texto">Email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ej.nombre@ejemplo.com" required>
+       </div>
+       <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label formulario__texto">pon tu consulta</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+       </div>
+     </div>
+     <div class="formulario__enviar">
+       <button type="submit" class="btn btn-primary">Enviar</button>
+       <img class="formulario__imagen__logo" src="../multimedia/decoracion.png" alt="logo">
+     </div>
+     <div class="formulario__imagen">
+       <img class="formulario__imagen" src="../multimedia/WhatsApp Image 2024-05-11 at 4.40.23 PM.jpeg" alt="">
+     </div>
+    </div>
+    
   </main>
   <footer class="footer__contenedor">
     <a href=""><img src="../multimedia/facebook.png" alt="facebook" class="footer__enlaces"></a>
