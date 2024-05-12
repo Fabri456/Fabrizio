@@ -67,10 +67,19 @@ body{
     margin-bottom: 50px;
 }
 .main__texto{
+    width: 300px;
+    max-width: 100%;
+    height: auto;
     color: #ffffff;
     border: 2px solid #ffffff;
     text-align: center;
-    margin: 0px 300px 0px 300px
+}
+.main__texto__contenedor{
+    display: flex;
+    justify-content: center;
+}
+.main__texto__contenedor2{
+    display: none;
 }
 .main__contenedor__ofertas__newin{
     display: flex;
@@ -85,10 +94,15 @@ body{
 }
 .main__imagen{
     width: 15rem;
+    max-width: 100%;
+    height: auto;
 }
 .main__texto__card{
     text-align: center;
     text-decoration: none;
+}
+.main__contenedor__ofertas__newin2{
+    display: none;
 }
 .main__grilla{
     display: grid;
@@ -108,24 +122,30 @@ body{
     width: 41rem;
     border-radius: 10px;
     grid-area: CategoriaJeans;
-
+    max-width: 100%;
+    height: auto;
 } 
 .CategoriaCamperas{
     width: 41rem;
     border-radius: 10px;
     grid-area: CategoriaCamperas;
-
+    max-width: 100%;
+    height: auto;
 }
 .CategoriaSweaters{
     width: 41rem;
     border-radius: 10px;
     grid-area: CategoriaSweaters;
+    max-width: 100%;
+    height: auto;
 
 }
 .CategoriaBuzos{
     width: 41rem;
     border-radius: 10px;
     grid-area: CategoriaBuzos;
+    max-width: 100%;
+    height: auto;
 
 }
 .footer__contenedor{
@@ -227,6 +247,9 @@ body{
         background-color: #adadad;
         border-radius: 10px;
     }
+    .main__texto__card{
+        font-size: 20px;
+    }
     .main__texto__contenedor{
         margin: 20px;
     }
@@ -252,5 +275,36 @@ body{
     .main__card{
         display: block;
     }
-
+    .main__contenedor__ofertas__newin2{
+        display: unset;
+        display: flex;
+        justify-content: space-between;
+        margin: 45px 0px 50px 0px;
+    }
+    .main__contenedor__ofertas__newin{
+        display: none;
+    }
+    .main__texto__contenedor{
+        display: none;
+    }
+    .main__texto__contenedor2{
+        display: unset;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .main__grilla{
+        display: grid;
+        border-radius: 10px;
+        padding: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        grid-template-areas: 
+        "CategoriaJeans" 
+        "CategoriaCamperas"
+        "CategoriaSweaters" 
+        "CategoriasBuzos";
+    }
+    
 }
