@@ -253,6 +253,27 @@ body{
     .main__texto__contenedor{
         margin: 20px;
     }
+    .formulario__contenedor{
+        border: 2px solid #89937C;
+        margin: 150px;
+        padding: 50px;
+        border-radius: 40px;
+        background-color: #89937c7a;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "formulario__forms formulario__enviar";
+    }
+    .formulario__imagen{
+        display: none;
+    }
+    .formulario__enviar{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        margin-left: 70px;
+    }
 }
 @media screen and (max-width:534px){
     .titulo__texto{
@@ -305,6 +326,19 @@ body{
         "CategoriaCamperas"
         "CategoriaSweaters" 
         "CategoriasBuzos";
+    }
+    .formulario__contenedor{
+        border: 2px solid #89937C;
+        margin: 50px;
+        padding: 50px;
+        border-radius: 40px;
+        background-color: #89937c7a;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "formulario__forms" 
+        "formulario__enviar";
     }
     
 }
