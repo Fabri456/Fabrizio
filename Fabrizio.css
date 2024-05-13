@@ -28,11 +28,12 @@ body{
     border-radius: 30px;
     padding: 10px;
 }
-.titulo__texto{
+.titulo__texto a{
     color: #000000;
     padding: 10px;
     font-size: 60px;
     font-family: MiFuentePersonalizada;
+    text-decoration: none;
 }
 .navegador{
     border-radius: 10px;
@@ -83,7 +84,7 @@ body{
 }
 .main__contenedor__ofertas__newin{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 45px 0px 50px 0px;
 }
 .main__contenedor__card{
@@ -92,70 +93,94 @@ body{
     width: 15rem;
     margin: 10px;
 }
+.main__contenedor__oferta{
+    background-color: #ffffff;
+    width: 50px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 7px;
+    margin-left: 10px;
+}
 .main__imagen{
     width: 15rem;
     max-width: 100%;
     height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 .main__texto__card{
     text-align: center;
+    font-size: 15px;    
+    margin-top: 10px;
+}
+.main__texto__card a{
     text-decoration: none;
+    color: #000000;
+}
+.main__texto__oferta{
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+.main__texto__precio{
+    text-align: center;
+    font-size: 40px;
+}
+.main__contenedor__carrito{
+    border: #000000 solid 2px;
+    background-color: #ffffff;
+    max-width: 100%;
+    height: auto;
+    margin: 15px;
+}
+.main__texto__carrito{
+    text-align: center;
+    font-size: 15px;
+}
+.main__texto__carrito a{
+    text-decoration: none;
+    color: #000000;
 }
 .main__contenedor__ofertas__newin2{
     display: none;
 }
-.main__grilla{
-    display: grid;
-    border-radius: 10px;
-    padding: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr ;
-    gap: 10px;
-    grid-template-areas: 
-    "CategoriaJeans CategoriaCamperas"
-    "CategoriaSweaters CategoriasBuzos";
+.main__categorias{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: #ffffff solid 3px;
+    padding-top: 30px;
 }
-.main__grilla a:hover{
-    opacity: .6;
+.main__categorias2{
+    display: none;
 }
-.CategoriaJeans{
-    width: 41rem;
-    border-radius: 10px;
-    grid-area: CategoriaJeans;
+.main__categorias a:hover{
+    opacity: .4;
+}
+.main__categoria__imagen{
+    border-radius: 30px;
+    width: 20rem;
     max-width: 100%;
     height: auto;
-} 
-.CategoriaCamperas{
-    width: 41rem;
-    border-radius: 10px;
-    grid-area: CategoriaCamperas;
-    max-width: 100%;
-    height: auto;
-}
-.CategoriaSweaters{
-    width: 41rem;
-    border-radius: 10px;
-    grid-area: CategoriaSweaters;
-    max-width: 100%;
-    height: auto;
-
-}
-.CategoriaBuzos{
-    width: 41rem;
-    border-radius: 10px;
-    grid-area: CategoriaBuzos;
-    max-width: 100%;
-    height: auto;
-
 }
 .footer__contenedor{
     background-color: #626958;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    margin-top: 30px;
 }
 .footer__enlaces{
     width: 50px;
     margin: 20px;
+}
+.footer__mediosdepago__texto{
+    margin: 0%;
+    text-decoration: solid;
+    color: #000000;
+    font-family: MiFuentePersonalizada;
+}
+.footer__mediosdepago__imagen{
+    width: 40px;
+    max-width: 100%;
+    height: auto;
 }
 .main__carrusel__mediaqueries{
     display: none;
@@ -195,7 +220,7 @@ body{
 }
 @media screen and (max-width:1000px){
 
-    .titulo__texto{
+    .titulo__texto a{
         padding: 10px;
         font-size: 40px;
         font-family: MiFuentePersonalizada;
@@ -276,7 +301,7 @@ body{
     }
 }
 @media screen and (max-width:534px){
-    .titulo__texto{
+    .titulo__texto a{
         padding: 10px;
         font-size: 20px;
         font-family: MiFuentePersonalizada;
@@ -314,18 +339,23 @@ body{
         justify-content: center;
         margin-top: 30px;
     }
-    .main__grilla{
-        display: grid;
-        border-radius: 10px;
-        padding: 10px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 10px;
-        grid-template-areas: 
-        "CategoriaJeans" 
-        "CategoriaCamperas"
-        "CategoriaSweaters" 
-        "CategoriasBuzos";
+    .main__categorias{
+        display: none;
+    }
+    .main__categorias2{
+        border-top: #ffffff solid 3px;
+        padding-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main__categorias2 img{
+        margin: 30px;
+    }
+    .main__categorias2 a:hover{
+        opacity: .4;
     }
     .formulario__contenedor{
         border: 2px solid #89937C;
