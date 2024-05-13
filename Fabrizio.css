@@ -5,7 +5,7 @@
 }
 @font-face{
     font-family:'dafont';
-    src: url(./font/Themundayfreeversion-Regular.ttf);
+    src: url(./font/Elegante\ Classica.ttf);
 }
 @font-face{
     font-family:'MiFuentePersonalizada';
@@ -212,11 +212,43 @@ body{
     grid-area: formulario__forms;
 }
 .formulario__enviar{
-    text-align: center;
     grid-area: formulario__enviar;
 }
 .formulario__texto{
     color:#ffffff;
+}
+.newin__main__texto{
+    text-align: center;
+    color: #ffffff;
+    border: #ffffff 2px solid;
+    width: 250px;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+.newin__main__subtexto{
+    color: #ffffff;
+    font-family: MiFuentePersonalizada;
+    text-align: center;
+}
+.newin__main__subsubtexto{
+    color: #ffffff;
+    margin: 40px 0px 0px 40px;
+    font-size: 15px;
+}
+.main__imagen2{
+    width: 20rem;
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.main__contenedor__card2{
+    background-color: #89937C;
+    border-radius: 10px;
+    width: 20rem;
+    margin: 10px;
 }
 @media screen and (max-width:1000px){
 
@@ -236,7 +268,7 @@ body{
     }
     .navegador__dropdown{
         display: unset;
-        margin-right: 20px;
+        margin: 20px;
         background-color:#89937C;
         border-color: #282B28;
     }
@@ -303,7 +335,7 @@ body{
 @media screen and (max-width:534px){
     .titulo__texto a{
         padding: 10px;
-        font-size: 20px;
+        font-size: 35px;
         font-family: MiFuentePersonalizada;
     }
     .titulo__imagen{
