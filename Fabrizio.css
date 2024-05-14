@@ -67,13 +67,15 @@ body{
 .main__carrusel{
     margin-bottom: 50px;
 }
-.main__texto{
+.main__texto a{
     width: 300px;
     max-width: 100%;
     height: auto;
     color: #ffffff;
     border: 2px solid #ffffff;
     text-align: center;
+    text-decoration: none;
+    padding: 5px 50px 5px 50px;
 }
 .main__texto__contenedor{
     display: flex;
