@@ -3,18 +3,20 @@
     padding: 0;
     box-sizing: 0;
 }
+/*fuentes*/
 @font-face{
     font-family:'dafont';
-    src: url(./font/Elegante\ Classica.ttf);
+    src: url(../font/Elegante\ Classica.ttf);
 }
 @font-face{
     font-family:'MiFuentePersonalizada';
-    src: url(./font/Milker.otf) format('truetype');
+    src: url(../font/Milker.otf) format('truetype');
 }
 body{
-    background-image: url(./multimedia/desktop-wallpaper-dark-gray-dark-grey.jpg);
+    background-image: url(../multimedia/desktop-wallpaper-dark-gray-dark-grey.jpg);
     font-family: dafont;
 }
+/*estilos para el header del inicio*/
 .titulo__contenedor{
     display: flex;
     justify-content: space-between;
@@ -35,6 +37,7 @@ body{
     font-family: MiFuentePersonalizada;
     text-decoration: none;
 }
+/*navegador dentro del header*/
 .navegador{
     border-radius: 10px;
     margin: 20px;
@@ -64,6 +67,7 @@ body{
 .navegador__dropdown{
     display: none;
 }
+/*comienzo de estilos del main donde contiene las secciones de ofertas, new in y categorias*/
 .main__carrusel{
     margin-bottom: 50px;
 }
@@ -163,6 +167,7 @@ body{
     max-width: 100%;
     height: auto;
 }
+/*estilos para el footer que contiene enlaces y formas de pago*/
 .footer__contenedor{
     background-color: #626958;
     display: flex;
@@ -187,37 +192,128 @@ body{
 .main__carrusel__mediaqueries{
     display: none;
 }
-.formulario__contenedor{
-    border: 2px solid #89937C;
-    margin: 150px;
-    padding: 50px;
-    border-radius: 40px;
-    background-color: #89937c7a;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "formulario__forms formulario__imagen"
-    "formulario__forms formulario__imagen"
-    "formulario__forms formulario__imagen"
-    "formulario__enviar formulario__imagen";
+/*estilos para formularios*/
+.form-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.formulario__imagen__logo{
-    width: 50px;
-}
-.formulario__imagen{
+.form-container{
     width: 400px;
-    grid-area: formulario__imagen;
-    margin-left: 25px;
+    background-color: #626958;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 150px;
+    img{
+        width: 100px;
+    }
+}  
+.form-enviar{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
-.formulario__forms{
-    grid-area: formulario__forms;
+.form-container button:active {
+    scale: 0.95;
+} 
+.form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} 
+.form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+} 
+.form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 12px;
+} 
+.form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #000000;
+} 
+.form-container .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    border: 1px solid #000000;
+    background-color: transparent;
+    font-family: inherit;
+} 
+.form-container .form-group input::placeholder {
+    opacity: 0.5;
+} 
+.form-container .form-group input:focus {
+    outline: none;
+    border-color: #ffffff;
+}  
+.form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #ffffff;
+}  
+.form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color: #717171;
+    font-weight: 600;
+    width: 40%;
+    background: #313131;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+}  
+.form-container .form-submit-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
+} 
+.button {
+  --bg: #000;
+  --hover-bg: #626958;
+  --hover-text: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
 }
-.formulario__enviar{
-    grid-area: formulario__enviar;
+.button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
 }
-.formulario__texto{
-    color:#ffffff;
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
 }
 .newin__main__texto{
     text-align: center;
@@ -409,5 +505,4 @@ body{
         "formulario__forms" 
         "formulario__enviar";
     }
-    
 }
