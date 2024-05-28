@@ -36,33 +36,44 @@ body{
     font-size: 60px;
     font-family: MiFuentePersonalizada;
     text-decoration: none;
+    max-width: 100%;
+    height: auto;
 }
 /*navegador dentro del header*/
 .navegador{
-    border-radius: 10px;
-    margin: 20px;
-    height: 100px;
-}
-.navegador li{
-    color: #282B28;
+    background-color:#464b3f;
+    border-radius: 20px;
+    padding: 10px;
     display: flex;
-    align-items: center;
-}
-.navegador li a{
-    border-radius: 10px;
-    background-color: #89937C;
-    font-size: 17px;
-    padding: 20px;
-    margin: 10px; 
-    text-decoration: none;  
-}
-.navegador li a:hover{
-    background-color: #5c6451;
-    border-radius: 10px;
-}
-.navegador li a:active{
-    background-color: #373b32;
-    border-radius: 10px;
+    justify-content: center; 
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    .navegador-sitio{
+        background-color: #393d34;
+    }
+    a{   
+        max-width: 100%;
+        height: auto;
+        margin: 10px;
+        background-color: #89937C;
+        border-radius: 10px;
+        padding: 5px;            
+        text-decoration: none;
+        transition: all 0.5s;
+        div{
+            max-width: 100%;
+            height: auto;            
+            h3{          
+                color: #000;
+                font-size: 15px;
+            }
+
+        }
+    }
+    a:hover{
+        background-color: #626958;
+    }
 }
 .navegador__dropdown{
     display: none;
@@ -133,10 +144,14 @@ body{
 }
 .main__contenedor__carrito{
     border: #000000 solid 2px;
-    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, #ffffff, #858585);
     max-width: 100%;
     height: auto;
     margin: 15px;
+    transition: all 0.5s;
+}
+.main__contenedor__carrito:hover{
+    background-image: linear-gradient(to bottom, #aaaaaa,#4b4b4b);
 }
 .main__texto__carrito{
     text-align: center;
@@ -439,6 +454,9 @@ ul {
     justify-content: center;
 }
 @media screen and (max-width:1000px){
+    .titulo__imagen{
+        display: none;
+    }
     .titulo__contenedor{
         position: sticky;
         top: .0;
