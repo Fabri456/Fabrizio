@@ -6,52 +6,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/fabrizio.css">
         <link rel="shortcut icon" href="../multimedia/decoracion.png" type="image/x-icon">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <title>Ofertas</title>
     </head>
 <body>
     <!--comienzo del header-->
     <header class="titulo__contenedor">
-      <h1 class="titulo__texto"><a href="../index.html">StellarStyleHub</a></h1>  
+      <div data-aos="fade-down">
+        <h1 class="titulo__texto"><a href="../index.html">StellarStyleHub</a></h1>  
+      </div>   
       <!--navegador para pantallas con minimo de 1000px--> 
-      <nav class="navbar navbar-expand-lg bg-body-tertiary navegador">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="./ofertas.html">Ofertas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="./Contacto.html">Contactanos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="./newin.html">New In</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+      <nav>
+        <div class="navegador">
+          <a href="../index.html"><div><h3>incio</h3></div></a>
+          <a href="./ofertas.html"><div><h3>ofertas</h3></div></a>
+          <a class="navegador-sitio" href="./productos.html"><div><h3>productos</h3></div></a>
+          <a href="./newin.html"><div><h3>new in</h3></div></a>
+          <a href="./contacto.html"><div><h3>Contactanos</h3></div></a>
+        </div>
+      </nav>
         <!--navegador para pantallas como maximo 1000px-->
-        <button class="btn btn-primary navegador__dropdown" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img class="navegador__imagen" src="../multimedia/png-clipart-menu-icon-icons-logos-emojis-menu-icons-thumbnail.png" alt="navegador menu"></button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-          <div class="offcanvas-header">
-             <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
-             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body navegador__contenedor">
-             <ul class="navegador__links">
-                 <li><a href="../index.html">Inicio</a></li>
-                 <li><a href="./ofertas.html">Ofertas</a></li>
-                 <li><a href="./Contacto.html">Contactanos</a></li>
-                 <li><a href="./newin.html">New In</a></li>
-             </ul>
-          </div>
-        </div>      
+      <button class="btn btn-primary navegador__dropdown" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img class="navegador__imagen" src="../multimedia/png-clipart-menu-icon-icons-logos-emojis-menu-icons-thumbnail.png" alt="navegador menu"></button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body navegador__contenedor">
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a  href="./ofertas.html">Ofertas</a></li>
+            <li><a class="navegador-link-sitio" href="./productos.html">Productos</a></li>
+            <li><a href="./newin.html">New In</a></li>
+            <li><a href="./contacto.html">Contactanos</a></li>
+          </ul>
+        </div>
+      </div>      
   </header>
   <!--Comienzo del main-->
   <main>
@@ -59,24 +49,33 @@
     <h1 class="newin__main__texto">PRODUCTOS</h1>
     <h6 class="newin__main__subtexto">conoce todos los PRODUCTOS de nuestra tienda</h6>
     <!--dropdown de bootstrap-->
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Camisa
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="./productos.html">All</a></li>
-          <li><a class="dropdown-item" href="./chaleco.html">Chaleco</a></li>
-          <li><a class="dropdown-item" href="./traje.html">Traje</a></li>
-          <li><a class="dropdown-item" href="./campera.html">Campera</a></li>
-          <li><a class="dropdown-item" href="./remera.html">Remera</a></li>
-          <li><a class="dropdown-item" href="./saco.html">Saco</a></li>
-          <li><a class="dropdown-item" href="./buzo.html">Buzo</a></li>
-          <li><a class="dropdown-item" href="./pantalones.html">Pantalon</a></li>
-        </ul>
-    </div>
+    <section>
+     <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+       <div class="bg-dark p-4">
+         <ul class="dropdown-links">
+           <li><a  href="./productos.html">All</a></li>
+           <li><a href="./pantalones.html">Pantalon</a></li>
+           <li><a class="dropdown-sitio" href="./chaleco.html">Chaleco</a></li>
+           <li><a href="./traje.html">Traje</a></li>
+           <li><a href="./camisa.html">Camisa</a></li>
+           <li><a href="./remera.html">Remera</a></li>
+           <li><a href="./saco.html">Saco</a></li>
+           <li><a href="./campera.html">Campera</a></li>
+           <li><a href="./buzo.html">Buzo</a></li>
+         </ul>
+       </div>
+     </div>
+      <nav class="navbar navbar-dark bg-dark">
+       <div class="container-fluid">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+       </div>
+      </nav>
+    </section>
     <!--conjunto de cards "chaleco" para pantallas con minimo 543px-->
     <div class="main__contenedor__ofertas__newin">
-        <div class="main__contenedor__card">
+        <div data-aos="fade-up" class="main__contenedor__card">
             <img src="../multimedia/12b.webp" alt="saco" class="main__imagen">
             <h2 class="main__texto__card"><a href="">CAMISACO DE PAÑO GRIS</a></h2>
             <h3 class="main__texto__oferta">$179.998</h3>         
@@ -91,7 +90,7 @@
     </div>
     <!--conjunto de cards "chaleco" para pantallas con maximo 543px-->
     <div class="main__contenedor__ofertas__newin2">
-        <div class="main__contenedor__card">
+        <div data-aos="fade-right" class="main__contenedor__card">
             <img src="../multimedia/12b.webp" alt="saco" class="main__imagen">
             <h2 class="main__texto__card"><a href="">CAMISACO DE PAÑO GRIS</a></h2>
             <h3 class="main__texto__oferta">$179.998</h3>         
@@ -104,13 +103,43 @@
             </div>
         </div>
     </div>
+    <!--seccion de imagenes con fondo blanco-->
+    <section class="section-img">
+      <img src="../multimedia/Captura1.PNG" alt="">
+      <img src="../multimedia/Captura2.PNG" alt="">
+      <img src="../multimedia/Captura3.PNG" alt="">
+    </section>
   </main>
   <!--Comienzo del footer-->
   <footer class="footer__contenedor">
-        <div>
-        <h6 class="footer__mediosdepago__texto">REDES SOCIALES</h6>
-         <a href=""><img src="../multimedia/facebook.png" alt="facebook" class="footer__enlaces"></a>
-         <a href=""><img src="../multimedia/instagram.png" alt="instagram" class="footer__enlaces"></a>
+    <div>
+      <h6 class="footer__mediosdepago__texto">REDES SOCIALES</h6>
+      <ul class="example-2">
+       <li class="icon-content">
+          <a
+            href="https://www.instagram.com/fabrizio_frc27/?next=%2F"
+            aria-label="Instagram"
+            data-social="instagram"
+          >
+          <div class="filled"></div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-instagram"
+            viewBox="0 0 16 16"
+            xml:space="preserve"
+          >
+          <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                fill="currentColor"
+          ></path>
+          </svg>
+          </a>
+          <div class="tooltip">Instagram</div>
+         </li>
+        </ul>      
         </div>
         <div class="footer__mediosdepago__contenedor">
          <h6 class="footer__mediosdepago__texto">MEDIOS DE PAGO</h6>
@@ -126,8 +155,10 @@
            <img class="footer__mediosdepago__imagen" src="../multimedia/mastercard-debit@2x.png" alt="mastercard debito">
            <img class="footer__mediosdepago__imagen" src="../multimedia/mastercard@2x.png" alt="mastercard">
           </div>
-        </div>
-    </footer> 
+      </div>
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({easing:'ease-out-back',duration: 2000})</script>
 </body>
 </html>

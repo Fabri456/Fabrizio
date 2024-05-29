@@ -28,19 +28,20 @@
       <!--navegador para pantallas como maximo 1000px-->
       <button class="btn btn-primary navegador__dropdown" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img class="navegador__imagen" src="../multimedia/png-clipart-menu-icon-icons-logos-emojis-menu-icons-thumbnail.png" alt="navegador menu"></button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-          <div class="offcanvas-header">
-             <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
-             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body navegador__contenedor">
-             <ul class="navegador__links">
-                 <li><a href="../index.html">Inicio</a></li>
-                 <li><a href="./ofertas.html">Ofertas</a></li>
-                 <li><a href="./Contacto.html">Contactanos</a></li>
-                 <li><a href="./newin.html">New In</a></li>
-             </ul>
-          </div>
-        </div>      
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body navegador__contenedor">
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a  href="./ofertas.html">Ofertas</a></li>
+            <li><a class="navegador-link-sitio" href="./productos.html">Productos</a></li>
+            <li><a href="./newin.html">New In</a></li>
+            <li><a href="./contacto.html">Contactanos</a></li>
+          </ul>
+        </div>
+      </div>      
   </header>
   <!--Comienzo del main-->
   <main>
@@ -48,21 +49,30 @@
     <h1 class="newin__main__texto">PRODUCTOS</h1>
     <h6 class="newin__main__subtexto">conoce todos los PRODUCTOS de nuestra tienda</h6>
     <!--dropdown de bootstrap-->
-    <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        All
-      </button>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="./pantalones.html">Pantalon</a></li>
-        <li><a class="dropdown-item" href="./chaleco.html">Chaleco</a></li>
-        <li><a class="dropdown-item" href="./traje.html">Traje</a></li>
-        <li><a class="dropdown-item" href="./camisa.html">Camisa</a></li>
-        <li><a class="dropdown-item" href="./remera.html">Remera</a></li>
-        <li><a class="dropdown-item" href="./saco.html">Saco</a></li>
-        <li><a class="dropdown-item" href="./campera.html">Campera</a></li>
-        <li><a class="dropdown-item" href="./buzo.html">Buzo</a></li>
-      </ul>
-    </div>
+    <section>
+     <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+       <div class="bg-dark p-4">
+         <ul class="dropdown-links">
+           <li><a class="dropdown-sitio" href="./productos.html">All</a></li>
+           <li><a href="./pantalones.html">Pantalon</a></li>
+           <li><a href="./chaleco.html">Chaleco</a></li>
+           <li><a href="./traje.html">Traje</a></li>
+           <li><a href="./camisa.html">Camisa</a></li>
+           <li><a href="./remera.html">Remera</a></li>
+           <li><a href="./saco.html">Saco</a></li>
+           <li><a href="./campera.html">Campera</a></li>
+           <li><a href="./buzo.html">Buzo</a></li>
+         </ul>
+       </div>
+     </div>
+      <nav class="navbar navbar-dark bg-dark">
+       <div class="container-fluid">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+       </div>
+      </nav>
+    </section>
     <!--todos los productos que hasta ahora que he utilizado-->
     <div class="main__contenedor__ofertas__newin">
         <div data-aos="fade-right" class="main__contenedor__card">
@@ -754,6 +764,12 @@
          </div>
         </div>
     </div>
+    <!--seccion de imagenes con fondo blanco-->
+    <section class="section-img">
+      <img src="../multimedia/Captura1.PNG" alt="">
+      <img src="../multimedia/Captura2.PNG" alt="">
+      <img src="../multimedia/Captura3.PNG" alt="">
+    </section>
   </main>
   <!--Comienzo del footer-->
   <footer class="footer__contenedor">

@@ -26,14 +26,14 @@ body{
     border-color: #ffffff;
 }
 .titulo__imagen{
-    width: 150px;
+    width: 100px;
     border-radius: 30px;
     padding: 10px;
 }
 .titulo__texto a{
     color: #000000;
     padding: 10px;
-    font-size: 60px;
+    font-size: 50px;
     font-family: MiFuentePersonalizada;
     text-decoration: none;
     max-width: 100%;
@@ -167,7 +167,7 @@ body{
 .main__categorias{
     display: flex;
     justify-content: space-evenly;
-    border-top: #ffffff solid 3px;
+    border-top: #717171 solid 2px;
     padding-top: 30px;
 }
 .main__categorias2{
@@ -453,10 +453,68 @@ ul {
     display: flex;
     justify-content: center;
 }
-@media screen and (max-width:1000px){
+.division{      
+    border-top: #717171 solid 2px;
+    margin-top: 20px;
+    padding: 20px;
+    h1{
+        margin: 30px;
+        font-family: MiFuentePersonalizada;
+        color: #ffffff;
+        text-align: center;
+    }
+
+}    
+.division-contenedor{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    a{
+        img{
+            border-radius: 30px;
+            max-width: 100%;
+            height: auto;
+            width: 35rem
+        }
+        img:hover{
+            opacity: .4;
+        } 
+    }
+}
+.section-img{
+    display: flex;
+    justify-content: center;
+    img{
+        border-radius: 50px;
+        margin: 50px;
+        max-width: 100%;
+        height: auto;
+    }
+}
+.dropdown-links{
+    display: flex;
+    justify-content: space-between;
+    li{
+        .dropdown-sitio{
+            background-color: #626958;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+}
+@media screen and (max-width:1050px){
     .titulo__imagen{
         display: none;
     }
+}
+@media screen and (max-width:1000px){
     .titulo__contenedor{
         position: sticky;
         top: .0;
@@ -488,31 +546,34 @@ ul {
     }
     .navegador__contenedor{
         background-color: #89937C;
-    }
-    .navegador__links{
-        padding: 0%;
-    }
-    .navegador__links li{
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        font-family: dafont;
-    }
-    .navegador__links li a{
-        text-align: center;
-        color: #282B28;
-        width: 100%;
-        border-radius: 10px;
-        background-color: #ffffff;
-        font-size: 20px;
-        padding: 20px;
-        margin: 10px;
-        text-decoration: none;  
-    }
-    .navegador__links li a:active{
-        background-color: #adadad;
-        border-radius: 10px;
+        ul{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;                
+            background-color: #313131;
+            padding: 50px;
+            border-radius: 10px;
+            li{
+                display: flex;
+                justify-content: center;
+                .navegador-link-sitio{
+                    background-color: #282B28;
+                }
+                a{
+                    text-decoration: none;
+                    color: #000000;
+                    font-size: 25px;                
+                    background-color: #656d5b;
+                    width: 250px;
+                    border-radius: 20px;
+                    padding: 20px;
+                }
+                a:hover{
+                    background-color: #464b3f;
+                }
+            }
+        }
     }
     .main__texto__card{
         font-size: 15px;
@@ -529,12 +590,6 @@ ul {
         padding: 10px;
         font-size: 20px;
         font-family: MiFuentePersonalizada;
-    }
-    .titulo__imagen{
-        display: none;
-    }
-    .navegador{
-        display: none;
     }
     .main__carrusel{
         display: none;
@@ -593,5 +648,22 @@ ul {
         grid-template-areas: 
         "formulario__forms" 
         "formulario__enviar";
+    }
+    .section-img{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        img{
+            border-radius: 50px;
+            margin: 50px;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .dropdown-links{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
     }
 }
