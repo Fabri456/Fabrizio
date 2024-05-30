@@ -17,6 +17,7 @@ body{
     font-family: dafont;
 }
 /*estilos para el header del inicio*/
+/*contenedor del header*/
 .titulo__contenedor{
     display: flex;
     justify-content: space-between;
@@ -25,11 +26,13 @@ body{
     border: 10px;
     border-color: #ffffff;
 }
+/*imagen del header*/
 .titulo__imagen{
     width: 100px;
     border-radius: 30px;
     padding: 10px;
 }
+/*link del titulo al index*/
 .titulo__texto a{
     color: #000000;
     padding: 10px;
@@ -40,6 +43,7 @@ body{
     height: auto;
 }
 /*navegador dentro del header*/
+/*contenedor del navegador*/
 .navegador{
     background-color:#464b3f;
     border-radius: 20px;
@@ -49,9 +53,11 @@ body{
     max-width: 100%;
     height: auto;
     margin: 10px;
+    /*clase que indica en que parte de la pagina estas*/
     .navegador-sitio{
         background-color: #393d34;
     }
+    /*links del navegador*/
     a{   
         max-width: 100%;
         height: auto;
@@ -61,9 +67,11 @@ body{
         padding: 5px;            
         text-decoration: none;
         transition: all 0.5s;
+        /*contenedor de los links*/
         div{
             max-width: 100%;
-            height: auto;            
+            height: auto;
+            /*texto de los links del navegador*/            
             h3{          
                 color: #000;
                 font-size: 15px;
@@ -71,17 +79,21 @@ body{
 
         }
     }
+    /*cambio de background color en el momento hover*/
     a:hover{
         background-color: #626958;
     }
 }
+/*para que no se vea el navegador para dispositivos con pantalla grande*/
 .navegador__dropdown{
     display: none;
 }
 /*comienzo de estilos del main donde contiene las secciones de ofertas, new in y categorias*/
+/*estilos del carrusel*/
 .main__carrusel{
     margin-bottom: 50px;
 }
+/*estilos para el link de ofertas en el main del index*/
 .main__texto a{
     width: 300px;
     max-width: 100%;
@@ -92,24 +104,29 @@ body{
     text-decoration: none;
     padding: 5px 50px 5px 50px;
 }
+/*estilos de contenedor de ofertas en el main del index*/
 .main__texto__contenedor{
     display: flex;
     justify-content: center;
 }
+/*para que no se vea en pantalla grande*/
 .main__texto__contenedor2{
     display: none;
 }
+/*contenedor donde estan las cards*/
 .main__contenedor__ofertas__newin{
     display: flex;
     justify-content: space-evenly;
     margin: 45px 0px 50px 0px;
 }
+/*contenedor de las cards*/
 .main__contenedor__card{
     background-color: #89937C;
     border-radius: 10px;
     width: 15rem;
     margin: 10px;
 }
+/*estilos para el porcentaje de la oferta*/
 .main__contenedor__oferta{
     background-color: #ffffff;
     width: 50px;
@@ -118,6 +135,7 @@ body{
     border-radius: 7px;
     margin-left: 20px;
 }
+/*imagen de los productos en las cards*/
 .main__imagen{
     width: 15rem;
     max-width: 100%;
@@ -125,23 +143,28 @@ body{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+/*texto de las cards*/
 .main__texto__card{
     text-align: center;
     font-size: 15px;    
     margin-top: 10px;
 }
+/*links para las cards*/
 .main__texto__card a{
     text-decoration: none;
     color: #000000;
 }
+/*texto del precio tachado*/
 .main__texto__oferta{
     text-decoration: line-through;
     margin-left: 10px;
 }
+/*texto del precio*/
 .main__texto__precio{
     text-align: center;
     font-size: 40px;
 }
+/*contenedor del texto añadir al carrito*/
 .main__contenedor__carrito{
     border: #000000 solid 2px;
     background-image: linear-gradient(to bottom, #ffffff, #858585);
@@ -150,32 +173,40 @@ body{
     margin: 15px;
     transition: all 0.5s;
 }
+/*contenedor añadir al carrito en hover*/
 .main__contenedor__carrito:hover{
     background-image: linear-gradient(to bottom, #aaaaaa,#4b4b4b);
 }
+/*texto añadir al carrito*/
 .main__texto__carrito{
     text-align: center;
     font-size: 15px;
 }
+/*link añadir carrito*/
 .main__texto__carrito a{
     text-decoration: none;
     color: #000000;
 }
+/*contenedor donde estan las cards para pantallas chicas*/
 .main__contenedor__ofertas__newin2{
     display: none;
 }
+/*contenedor donde estan las imagenes de la categorias*/
 .main__categorias{
     display: flex;
     justify-content: space-evenly;
     border-top: #717171 solid 2px;
     padding-top: 30px;
 }
+/*contenedor donde estan las imagenes de la categorias para pantalla chica*/
 .main__categorias2{
     display: none;
 }
+/*contenedor donde estan las imagenes de la categorias en hover*/
 .main__categorias a:hover{
     opacity: .4;
 }
+/*imagen de las categorias*/
 .main__categoria__imagen{
     border-radius: 30px;
     width: 20rem;
@@ -183,15 +214,19 @@ body{
     height: auto;
 }
 /*estilos para el footer que contiene enlaces y formas de pago*/
+/*contenedor del footer*/
 .footer__contenedor{
     background-color: #626958;
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
+   
 }
-ul {
-  list-style: none;
+/*estilos lista*/
+ul{
+    list-style: none;
 }
+/*estilos para link de instagram sacado en la pagina https://uiverse.io/elements?page=1*/
 .example-2 {
   display: flex;
   justify-content: center;
@@ -257,14 +292,6 @@ ul {
 .example-2 .icon-content a:hover .filled {
   height: 100%;
 }
-.example-2 .icon-content a[data-social="linkedin"] .filled,
-.example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
-  background-color: #0274b3;
-}
-.example-2 .icon-content a[data-social="github"] .filled,
-.example-2 .icon-content a[data-social="github"] ~ .tooltip {
-  background-color: #24262a;
-}
 .example-2 .icon-content a[data-social="instagram"] .filled,
 .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
   background: linear-gradient(
@@ -277,16 +304,14 @@ ul {
     #fd1f1f
   );
 }
-.example-2 .icon-content a[data-social="youtube"] .filled,
-.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
-  background-color: #ff0000;
-}
+/*texto medios de pago*/
 .footer__mediosdepago__texto{
     margin: 0%;
     text-decoration: solid;
     color: #000000;
     font-family: MiFuentePersonalizada;
 }
+/*imagen de los medios de imagen*/
 .footer__mediosdepago__imagen{
     width: 40px;
     max-width: 100%;
@@ -322,6 +347,7 @@ ul {
         width: 100px;
     }
 }
+/*estilos para el formulario sacado de la pagina https://uiverse.io/elements?page=1*/
 .form{
     margin: 0px 50px;
     display: flex;
@@ -453,6 +479,7 @@ ul {
     display: flex;
     justify-content: center;
 }
+/*contenedor donde se encuentra el texto PRODUCTOS*/
 .division{      
     border-top: #717171 solid 2px;
     margin-top: 20px;
@@ -464,7 +491,8 @@ ul {
         text-align: center;
     }
 
-}    
+}   
+/*contenedor donde se encuentra la imagen para ir a productos*/ 
 .division-contenedor{
     display: flex;
     justify-content: center;
@@ -481,6 +509,7 @@ ul {
         } 
     }
 }
+/*imagenes con fondo blanco*/
 .section-img{
     display: flex;
     justify-content: center;
@@ -491,6 +520,7 @@ ul {
         height: auto;
     }
 }
+/*dropdown de los links de los productos*/
 .dropdown-links{
     display: flex;
     justify-content: space-between;
@@ -665,5 +695,11 @@ ul {
         justify-content: center;
         flex-direction: column;
         gap: 10px;
+    }
+    .section-img{
+        img{
+            border-radius: 20px;
+            width: 250px;
+        }
     }
 }
