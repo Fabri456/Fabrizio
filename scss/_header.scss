@@ -1,0 +1,68 @@
+/*estilos para el header del inicio*/
+/*contenedor del header*/
+.titulo__contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $colorone;
+    border: 10px;
+    border-color: $colortwo;
+}
+/*imagen del header*/
+.titulo__imagen{
+    width: 100px;
+    border-radius: 30px;
+    padding: 10px;
+}
+/*link del titulo al index*/
+.titulo__texto a{
+    color: $colorthree;
+    padding: 10px;
+    font-size: 50px;
+    font-family: $fuentetitulo;
+    text-decoration: none;
+    @include imgresponsive;
+}
+/*navegador dentro del header*/
+/*contenedor del navegador*/
+.navegador{
+    background-color:#464b3f;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center; 
+    @include imgresponsive;
+    margin: 10px;
+    /*clase que indica en que parte de la pagina estas*/
+    .navegador-sitio{
+        background-color: #393d34;
+    }
+    /*links del navegador*/
+    a{   
+        @include imgresponsive;
+        margin: 10px;
+        background-color: $colorfour;
+        border-radius: 10px;
+        padding: 5px;            
+        text-decoration: none;
+        transition: all 0.5s;
+        /*contenedor de los links*/
+        div{
+            @include imgresponsive;
+            /*texto de los links del navegador*/            
+            h3{          
+                color: $colorthree;
+                font-size: 15px;
+            }
+
+        }
+    }
+    /*cambio de background color en el momento hover*/
+    a:hover{
+        background-color: $colorone;
+    }
+}
+/*para que no se vea el navegador para dispositivos con pantalla grande*/
+.navegador__dropdown{
+    display: none;
+}

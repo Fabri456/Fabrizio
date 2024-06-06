@@ -1,0 +1,11 @@
+$fuentetitulo: MiFuentePersonalizada;
+$fuentecuerpo: dafont;
+$fuenteespecial: inherit;
+$colorone:#626958;
+$colortwo:#ffffff;
+$colorthree:#000000;
+$colorfour:#89937C;
+@mixin imgresponsive{
+    max-width: 100%;
+    height: auto;
+}

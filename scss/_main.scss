@@ -1,0 +1,218 @@
+/*comienzo de estilos del main donde contiene las secciones de ofertas, new in y categorias*/
+/*estilos del carrusel*/
+.main__carrusel{
+    margin-bottom: 50px;
+}
+/*estilos para el link de ofertas en el main del index*/
+.main__texto a{
+    width: 300px;
+    @include imgresponsive;
+    color: $colortwo;
+    border: 2px solid $colortwo;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 50px 5px 50px;
+}
+/*estilos de contenedor de ofertas en el main del index*/
+.main__texto__contenedor{
+    display: flex;
+    justify-content: center;
+}
+/*para que no se vea en pantalla grande*/
+.main__texto__contenedor2{
+    display: none;
+}
+/*contenedor donde estan las cards*/
+.main__contenedor__ofertas__newin{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 45px 0px 50px 0px;
+}
+/*contenedor de las cards*/
+.main__contenedor__card{
+    background-color: $colorfour;
+    border-radius: 10px;
+    width: 15rem;
+    margin: 10px;
+}
+/*estilos para el porcentaje de la oferta*/
+.main__contenedor__oferta{
+    background-color: $colortwo;
+    width: 50px;
+    @include imgresponsive;
+    border-radius: 7px;
+    margin-left: 20px;
+}
+/*imagen de los productos en las cards*/
+.main__imagen{
+    width: 15rem;
+    @include imgresponsive;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+/*texto de las cards*/
+.main__texto__card{
+    text-align: center;
+    font-size: 15px;    
+    margin-top: 10px;
+}
+/*links para las cards*/
+.main__texto__card a{
+    text-decoration: none;
+    color: $colorthree;
+}
+/*texto del precio tachado*/
+.main__texto__oferta{
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+/*texto del precio*/
+.main__texto__precio{
+    text-align: center;
+    font-size: 40px;
+}
+/*contenedor del texto añadir al carrito*/
+.main__contenedor__carrito{
+    border: $colorthree solid 2px;
+    background-image: linear-gradient(to bottom, $colortwo, #858585);
+    max-width: 100%;
+    height: auto;
+    margin: 15px;
+    transition: all 0.5s;
+}
+/*contenedor añadir al carrito en hover*/
+.main__contenedor__carrito:hover{
+    background-image: linear-gradient(to bottom, #aaaaaa,#4b4b4b);
+}
+/*texto añadir al carrito*/
+.main__texto__carrito{
+    text-align: center;
+    font-size: 15px;
+}
+/*link añadir carrito*/
+.main__texto__carrito a{
+    text-decoration: none;
+    color: $colorthree;
+}
+/*contenedor donde estan las cards para pantallas chicas*/
+.main__contenedor__ofertas__newin2{
+    display: none;
+}
+/*contenedor donde estan las imagenes de la categorias*/
+.main__categorias{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: #717171 solid 2px;
+    padding-top: 30px;
+}
+/*contenedor donde estan las imagenes de la categorias para pantalla chica*/
+.main__categorias2{
+    display: none;
+}
+/*contenedor donde estan las imagenes de la categorias en hover*/
+.main__categorias a:hover{
+    opacity: .4;
+}
+/*imagen de las categorias*/
+.main__categoria__imagen{
+    border-radius: 30px;
+    width: 20rem;
+    @include imgresponsive;
+}
+.main__carrusel__mediaqueries{
+    display: none;
+}
+.newin__main__texto{
+    text-align: center;
+    color: $colortwo;
+    border: $colortwo 2px solid;
+    width: 270px;
+    margin: 20px auto;
+    @include imgresponsive;
+    border-radius: 30px;
+    padding: 10px;
+}
+.newin__main__subtexto{
+    color: $colortwo;
+    font-family: $fuentetitulo;
+    text-align: center;
+}
+.newin__main__subsubtexto{
+    color: $colortwo;
+    margin: 40px 0px 0px 40px;
+    font-size: 15px;
+}
+.main__imagen2{
+    width: 20rem;
+    @include imgresponsive;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.main__contenedor__card2{
+    background-color: $colorfour;
+    border-radius: 10px;
+    width: 15rem;
+    margin: 10px;
+}
+.dropdown{
+    display: flex;
+    justify-content: center;
+}
+/*contenedor donde se encuentra el texto PRODUCTOS*/
+.division{      
+    border-top: #717171 solid 2px;
+    margin-top: 20px;
+    padding: 20px;
+    h1{
+        margin: 30px;
+        font-family: $fuentetitulo;
+        color: $colortwo;
+        text-align: center;
+    }
+
+}   
+/*contenedor donde se encuentra la imagen para ir a productos*/ 
+.division-contenedor{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    a{
+        img{
+            border-radius: 30px;
+            @include imgresponsive;
+            width: 35rem
+        }
+        img:hover{
+            opacity: .4;
+        } 
+    }
+}
+/*imagenes con fondo blanco*/
+.section-img{
+    display: flex;
+    justify-content: center;
+    img{
+        border-radius: 50px;
+        margin: 50px;
+        @include imgresponsive;
+    }
+}
+/*dropdown de los links de los productos*/
+.dropdown-links{
+    display: flex;
+    justify-content: space-between;
+    li{
+        .dropdown-sitio{
+            background-color: $colorone;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: $colortwo;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+}
