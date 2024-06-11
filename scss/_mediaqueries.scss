@@ -117,9 +117,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
     }
     .main__categorias2 img{
         margin: 30px;
+    }
+    .main__categorias2 a{
+        transition: all 0.5s;
     }
     .main__categorias2 a:hover{
         opacity: .4;
