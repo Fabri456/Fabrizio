@@ -751,6 +751,15 @@ ul {
     border-radius: 20px;
     width: 250px;
   }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  background-image: url(../multimedia/desktop-wallpaper-dark-gray-dark-grey.jpg);
+  font-family: dafont;
 }
 * {
   margin: 0;
