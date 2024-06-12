@@ -1,10 +1,10 @@
-@import "variables";
-@import "mediaqueries";
-@import "fonts";
-@import "formulario";
-@import "header";
-@import "main";
-@import "footer";
+@import 'variable';
+@import 'fuente';
+@import 'header';
+@import 'main';
+@import 'form';
+@import 'footer';
+@import 'mediaqueries';
 *{
     margin: 0;
     padding: 0;
